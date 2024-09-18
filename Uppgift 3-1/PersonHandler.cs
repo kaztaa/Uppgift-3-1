@@ -14,7 +14,21 @@ namespace Uppgift_3_1
 
         }
 
-        //Sätter värdet hos Person
+        public Array PrintPerson(Person person)
+        {
+            string[] per = {person.FName, person.LName };
+            
+            Console.WriteLine($"Age: {person.Age}");
+            Console.WriteLine($"Name: {person.LName}");
+            Console.WriteLine($"Last name: {person.FName}");
+            Console.WriteLine($"Height: {person.Height}");
+            Console.WriteLine($"Weight: {person.Weight}");
+            return per;
+
+        }
+
+
+        // Sätter olika värden hos Person
         public void SetAge(Person pers, int age)
         {
             pers.Age = age;
@@ -37,7 +51,7 @@ namespace Uppgift_3_1
         }
 
 
-        // Returnera värdet hos Person
+        // Returnerar olika värden hos Person
         public int GetAge(Person pers, int age)
         {
             return age;

@@ -73,16 +73,22 @@ namespace Uppgift_3_1
             }
         }
 
-        // Konstruktorn, gör att age, fName och lName måste finnas vid instansiering
-        public Person(int age, string fName, string lName, double weight, double height)
+        // Konstruktorn 
+        public Person(int age, string fName, string lName, double height, double weight)
         {
-            Age = age;        // Använder property för validering
+            Age = age;
             FName = fName;
             LName = lName;
             Weight = weight;
             Height = height;
+        }
 
-    
+        // Overloadar för att kunna skapa utan weight och height
+        public Person(int age, string fName, string lName)
+        {
+            Age = age;
+            FName = fName;
+            LName = lName;
         }
     }
 
