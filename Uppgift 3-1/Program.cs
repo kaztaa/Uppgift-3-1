@@ -95,10 +95,13 @@ namespace Uppgift_3_1
             // 16 - nej
             // 17 - raden         public abstract string SomeString();   saknas i klassen Animal
 
+            //18
             foreach (Animal a in animales)
             {
                 if (a is Dog doggie)
-                    Console.WriteLine($"Stats: {} ");
+                    {
+                        Console.WriteLine(doggie.SomeString()); // Anropa Fetch-metoden
+                    }
             }
 
         }
