@@ -8,11 +8,11 @@ namespace Uppgift_3_1
     {
         static void Main(string[] args)
         {
-            //Ovning3_1();
+            Ovning3_1();
 
-            //Ovning3_2();
+            Ovning3_2();
 
-            //Ovning3_3();
+            Ovning3_3();
 
             Ovning3_4();
 
@@ -69,19 +69,26 @@ namespace Uppgift_3_1
             animales.Add(d3);
             animales.Add(p1);
             animales.Add(h5);
-                
+
+
+
+            // Lite space
+            Console.WriteLine("\n\n");
 
             // Fråga
             // 9 - Det är en lista för klassen Dog, då går det inte med en annan klass tex Horse
             // 10 - Animals
 
-            foreach (Animal a in animales)
+
+            // 11 - 12
+            foreach (Dog d in dogs)
             {
-                Console.WriteLine($"Stats: {a.Stats()} ");
+                Console.WriteLine($"Stats: {d.Stats()} ");
             }
 
-            // 13 - Gjorde en lista till för Animal men vet inte om det var syftet.
-            // Blir konstigt med frågorna annars.
+            // 13 - Skriver ut listan dogs som består av instanser av klassen Dog
+            // Metoden Stats() nås då den är deklarerad i klassen Animal och dess underklasser.
+
 
 
             // 14
@@ -91,16 +98,16 @@ namespace Uppgift_3_1
                 Console.WriteLine($"Stats: {a.Stats()} ");
             }
 
-            //d3.SomeString()
+       
             // 16 - nej
-            // 17 - raden         public abstract string SomeString();   saknas i klassen Animal
+            // 17 - SomeString() är inte definerat i klassen Animal
 
-            //18
+            // 18
             foreach (Animal a in animales)
             {
                 if (a is Dog doggie)
                     {
-                        Console.WriteLine(doggie.SomeString()); // Anropa Fetch-metoden
+                        Console.WriteLine(doggie.SomeString()); 
                     }
             }
 
